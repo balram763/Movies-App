@@ -15,7 +15,7 @@ const Navbar = ({fetchAPI}) => {
     <>
     <nav className="navbar bg-dark">
   <div className="container d-flex justify-content-between">
-    <h3 className="navbar-brand mb-0 h1 text-light">Movie</h3>
+    <h3 className="navbar-brand mb-0 h1 text-light">JUST WATCH</h3>
 
     <div>
     <form onSubmit={(e)=>handleSubmit(e)} class="d-flex" role="search">
