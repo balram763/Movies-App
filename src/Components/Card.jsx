@@ -8,16 +8,22 @@ const Card = ({item}) => {
   return (
     <>
 
-      <div className='card shadow mt-4 p-5 '>
-        <h3>{item.original_title}</h3>
-        <p>{item.overview}</p>
-        <img src={urlPoster} alt="" style={{height:"60vh", width:'100%', objectFit:'contain'}} />
-        <div className="d-flex justify-content-between px-4 my-2">
-        <p className='text-secondary'>{item.release_date}</p>
-        <p className='text-secondary'>rating : {item.vote_average}</p>
-        
-        </div>
-      </div>
+      
+         
+          <div className="col col-lg-4 col-md-6 col-sm-12">
+          <div className='card shadow mt-4 p-5' style={{height:'90vh'}}>
+           <h3>{item.original_title}</h3>
+           <p>{item.overview}</p>
+           <img src={urlPoster} alt="" style={{height:"40vh", width:'100%', objectFit:'contain'}} />
+          <div className="d-flex justify-content-between px-4 my-2">
+            <p className='text-dark'>{item.release_date}</p>
+            <p className='text-danger'>rating : {item.vote_average}</p>
+          </div>
+         </div>
+          </div>
+
+          
+         
     
     </>
   )

@@ -22,10 +22,14 @@ const Home = ({movie}) => {
   return (
     <>
         <div className="container p-3 text-center my-2">
-    <h1>Movie</h1>
-      {
+        <h1>Movie</h1>
+    
+        <div className="row">
+        {
         movie.map(item => <Card key={movie.id} item={item}/>)
       }
+        </div>
+
     </div>
     </>
   )
